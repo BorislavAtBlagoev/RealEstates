@@ -1,5 +1,4 @@
-﻿
-namespace RealEstates.Models
+﻿namespace RealEstates.Models
 {
 
     using System;

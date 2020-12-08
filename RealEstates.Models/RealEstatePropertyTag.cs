@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RealEstates.Models
+﻿namespace RealEstates.Models
 {
+
+    using System;
+
     public class RealEstatePropertyTag
     {
         public Guid RealEstatesPropertyId { get; set; }
