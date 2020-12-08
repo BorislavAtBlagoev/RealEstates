@@ -5,7 +5,7 @@
 
     public class RealEstatePropertyTag
     {
-        public Guid RealEstatesPropertyId { get; set; }
+        public Guid RealEstatePropertyId { get; set; }
         public virtual RealEstateProperty RealEstateProperty { get; set; }
         public Guid TagId { get; set; }
         public virtual Tag Tag { get; set; }

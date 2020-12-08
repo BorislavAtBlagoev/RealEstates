@@ -38,6 +38,9 @@
                 .HasMany(d => d.Properties)
                 .WithOne(p => p.District)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            model.Entity<RealEstatePropertyTag>()
+                .HasKey(x => new { x.RealEstatePropertyId, x.TagId });
         }
     }
 }
