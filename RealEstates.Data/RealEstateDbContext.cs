@@ -1,6 +1,5 @@
 ﻿namespace RealEstates.Data
 {
-
     using Microsoft.EntityFrameworkCore;
 
     using RealEstates.Models;

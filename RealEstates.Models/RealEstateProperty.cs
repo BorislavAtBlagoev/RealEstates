@@ -1,6 +1,5 @@
 ﻿namespace RealEstates.Models
 {
-
     using System;
     using System.Collections.Generic;
 

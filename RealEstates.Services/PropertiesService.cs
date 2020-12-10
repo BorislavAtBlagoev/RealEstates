@@ -1,6 +1,5 @@
 ﻿namespace RealEstates.Services
 {
-
     using System;
     using System.Linq;
     using System.Linq.Expressions;
@@ -22,6 +21,11 @@
 
         public void Create(string district, string buildingType, string propertyType, int size, int? floor, int? totalNumberOfFloors, decimal price, int? year)
         {
+            if (district == null)
+            {
+                throw new ArgumentNullException(nameof(district));
+            }
+
             var property = new RealEstateProperty
             {
                 Size = size,

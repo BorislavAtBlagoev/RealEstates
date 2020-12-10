@@ -1,6 +1,5 @@
 ﻿namespace RealEstates.Models
 {
-
     using System;
 
     public class RealEstatePropertyTag

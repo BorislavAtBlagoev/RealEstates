@@ -1,6 +1,5 @@
 ﻿namespace RealEstates.Services.Content
 {
-
     using System.Collections.Generic;
 
     using RealEstates.Services.Models;

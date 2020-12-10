@@ -1,6 +1,5 @@
 ﻿namespace RealEstates.Services
 {
-
     using System;
     using System.Linq;
     using System.Linq.Expressions;
@@ -29,7 +28,6 @@
                 .Take(count)
                 .ToList();
         }
-
         public IEnumerable<DistrictViewModel> GetTopDistrictsByProperties(int count = 10)
         {
             return this.db.Districts
