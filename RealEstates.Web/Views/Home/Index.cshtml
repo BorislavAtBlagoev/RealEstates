@@ -1,0 +1,33 @@
+﻿@model IEnumerable<RealEstates.Services.Models.DistrictViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+    <h1>Welcome to Real Estates Sofia!</h1>
+</div>
+
+<br />
+<br />
+<br />
+
+<table class="table table-striped table-hover">
+    <tr>
+        <th>Name</th>
+        <th>Avarage price</th>
+        <th>Min price</th>
+        <th>Max price</th>
+        <th>Property count</th>
+    </tr>
+
+    @foreach (var district in this.Model)
+    {
+        <tr>
+            <td>@district.Name</td>
+            <td>@district.AvaragePrice.ToString("f2")</td>
+            <td>@district.MinPrice€</td>
+            <td>@district.MaxPrice€</td>
+            <td>@district.PropertiesCount</td>
+        </tr>
+    }
+</table>

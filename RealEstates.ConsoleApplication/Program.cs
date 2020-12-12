@@ -11,7 +11,11 @@ namespace RealEstates.ConsoleApplication
     {
         static void Main(string[] args)
         {
+            var db = new RealEstateDbContext();
+            IDistrictsService districtsService = new DistrictsService(db);
+            var a = districtsService.GetTopDistrictsByAvaragePrice();
 
+            ;
         }
     }
 }

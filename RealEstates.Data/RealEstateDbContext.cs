@@ -30,6 +30,7 @@
                 options.UseSqlServer(ConnectionStringSettings.DEFAULT_CONNECTION);
             }
         }
+
         protected override void OnModelCreating(ModelBuilder model)
         {
             model.Entity<District>()

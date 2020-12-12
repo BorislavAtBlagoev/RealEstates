@@ -1,0 +1,21 @@
+﻿@model IEnumerable<RealEstates.Services.Models.DistrictViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Avarage price</td>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.AvaragePrice</td>
+            </tr>
+        }
+    </table>
+</div>
